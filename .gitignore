@@ -1,0 +1,36 @@
+# 환경변수 파일
+.env
+
+# 가상환경
+.venv/
+venv/
+ENV/
+
+# 캐시 파일
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# 로그 파일
+*.log
+
+# 데이터 디렉토리
+data/
+
+# 시스템 파일
+.DS_Store
+Thumbs.db
+
+# IDE 설정 파일
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 배포 관련 파일
+*.egg-info/
+dist/
+build/ 
