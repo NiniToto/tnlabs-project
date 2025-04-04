@@ -1,6 +1,6 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from app.api import routes
-from app.core.config import setup_cors
 
 app = FastAPI(
     title="RAG 챗봇 API",
@@ -8,8 +8,14 @@ app = FastAPI(
     version="0.1.0"
 )
 
-# CORS 설정  
-setup_cors(app)
+# CORS 설정
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # 라우터 등록
 app.include_router(routes.router)

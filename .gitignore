@@ -1,28 +1,35 @@
 # 환경변수 파일
 .env
+.env.*
 
-# 가상환경
-.venv/
-venv/
-ENV/
-
-# 캐시 파일
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
-.pytest_cache/
-.coverage
-htmlcov/
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
 
-# 로그 파일
-*.log
-
-# 데이터 디렉토리
-data/
-
-# 시스템 파일
-.DS_Store
-Thumbs.db
+# 가상환경
+venv/
+env/
+ENV/
+.venv/
+.env/
 
 # IDE 설정 파일
 .idea/
@@ -30,7 +37,35 @@ Thumbs.db
 *.swp
 *.swo
 
-# 배포 관련 파일
-*.egg-info/
-dist/
-build/ 
+# 로그 파일
+*.log
+logs/
+log/
+
+# 임시 파일
+*.tmp
+*.temp
+temp/
+tmp/
+
+# 데이터베이스
+*.sqlite3
+*.db
+
+# 캐시 파일
+.cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# 기타
+*.bak
+*.backup
+*~
+
+# 데이터 디렉토리
+data/
+
+# 시스템 파일
+.DS_Store
+Thumbs.db 
